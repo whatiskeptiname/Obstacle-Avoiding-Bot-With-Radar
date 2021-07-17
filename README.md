@@ -23,6 +23,7 @@ Obstacle-Avoiding-Bot-With-Radar is a simple Arduino-based bot, it uses ultrason
 
 ## Working
 
-The connections are made as described in the code comment section. Ultrasonic sensor is attached to the top of servo so it can scan 180 degree infornt of it acting as a radar. For this bot proximity of only theree directions are measured. The bot can be controlled manually using  this <a href="https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller&hl=en&gl=US"> app </a> or any other bluetooth controller app Howerer this code is configured for this particular app.
+The connections are made as described in the code comments.
+Ultrasonic sensor is attached to the top of servo so it can scan 180 degree infornt of it acting as a radar. Proximity of only theree directions are measured by the radar. The bot can be controlled manually using  this <a href="https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller&hl=en&gl=US"> app </a> or any other bluetooth controller app Howerer this code is configured for this particular app.
 </br>
 For the autonomous part, bot will move on a straight line and avoid obstacles using the radar. The bot will stop when it detects an obstacle move back a little and scans left and right to find a clear path. Once the path is found it turns to that direction and moves on. This process is repeaded until manual control is enabled.
