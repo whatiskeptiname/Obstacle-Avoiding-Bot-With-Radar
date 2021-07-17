@@ -1,6 +1,6 @@
 # Obstacle-Avoiding-Bot-With-Radar
 
-Obstacle-Avoiding-Bot-With-Radar is a simple Arduino-based bot, it uses ultrasonic sensor combined with servo motor to act as an ultrasonic radar. It can be controlled manually using Bluetooth or can run on its own avoiding obstacles by using the radar.
+Obstacle-Avoiding-Bot-With-Radar is a simple Arduino-based bot, it uses ultrasonic sensor combined with servo motor to act as an ultrasonic radar. It can be controlled manually using Bluetooth or can run on its own avoiding obstacles by using the radar. (Radar?? should be UDAR but never mind :P)
 
 ## Components Used
 
