@@ -1,6 +1,7 @@
 # Obstacle-Avoiding-Bot-With-Radar
 
-Obstacle-Avoiding-Bot-With-Radar is a simple Arduino-based bot, it uses ultrasonic sensor combined with servo motor to act as an ultrasonic radar. It can be controlled manually using Bluetooth or can run on its own avoiding obstacles by using the radar. 
+Obstacle-Avoiding-Bot-With-Radar is a simple Arduino-based bot, it uses ultrasonic sensor combined with servo motor to act as an ultrasonic radar. It can be controlled manually using Bluetooth or can run on its own avoiding obstacles by using the radar.
+
 ## Components Used
 
 1. Arduino Uno
@@ -8,7 +9,7 @@ Obstacle-Avoiding-Bot-With-Radar is a simple Arduino-based bot, it uses ultrason
 3. Servo Motor
 4. Bluetooth module HC-05
 5. Motor Driver L298N
-6. BO motor *2
+6. BO motor \*2
 7. Caster wheel
 8. LiPo battery
 
@@ -19,6 +20,9 @@ Obstacle-Avoiding-Bot-With-Radar is a simple Arduino-based bot, it uses ultrason
 
    <img src="./images/bot_2.jpg" width="40%" height="40%" />
 </div>
+
 ## Working
 
-The connections are made as shown in the above figure. Ultrasonic sensor and IR sensors are used for obstacle and surface detection respectively. A power bank of 5v is used as a power supply that powers the Arduino and motor driver.  Input from sensors are taken and according to those values vehicle either moves forward or backward or rotates right. The IR sensor returns LOW if it detects the surface, using that info the bot first checks if it is on a surface and then it tries to avoid the obstacle with the help of proximity data provided by the Ultrasonic sensor. L298N H-bridge motor driver is used for motor control (doesn't match with the schematic as the component is not available in Tinkercad). The motor driver receives the control signal from Arduino and drives the motor as described in the code with the help of sensor data.
+The connections are made as described in the code comment section. Ultrasonic sensor is attached to the top of servo so it can scan 180 degree infornt of it acting as a radar. For this bot proximity of only theree directions are measured. The bot can be controlled manually using  this <a href="https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller&hl=en&gl=US"> app </a> or any other bluetooth controller app Howerer this code is configured for this particular app.
+</br>
+For the autonomous part, bot will move on a straight line and avoid obstacles using the radar. The bot will stop when it detects an obstacle move back a little and scans left and right to find a clear path. Once the path is found it turns to that direction and moves on. This process is repeaded until manual control is enabled.
