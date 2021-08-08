@@ -5,13 +5,13 @@ Obstacle-Avoiding-Bot-With-Radar is a simple Arduino-based bot, it uses ultrason
 ## Components Used
 
 1. Arduino Uno
-2. Ultrasonic Sensor HC-SR04
-3. Servo Motor
-4. Bluetooth module HC-05
-5. Motor Driver L298N
-6. BO motor \*2
-7. Caster wheel
-8. LiPo battery
+1. Ultrasonic Sensor HC-SR04
+1. Servo Motor
+1. Bluetooth module HC-05
+1. Motor Driver L298N
+1. BO motor \*2
+1. Caster wheel
+1. LiPo battery
 
 ## Images
 
